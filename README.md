@@ -26,3 +26,8 @@ https://github.com/abhinav26/blogapp/blob/master/conf/application.conf
 
 Routes:
 https://github.com/abhinav26/blogapp/blob/master/conf/routes
+
+## Can be added later:
+- Users and user-auth. Admin and admin-auth
+- API auth using apikeys or auth tokens
+- Remove/Edit blog/comment funtionality
