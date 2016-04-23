@@ -1,0 +1,26 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+
+GET     /api/v1/blog/:blog_id                   controllers.BlogController.getBlogById(blog_id: String)
+POST    /api/v1/blog                            controllers.BlogController.addNewBlog()
+#DELETE  /api/v1/blog/:blog_id                   controllers.BlogController.deleteBlog(blog_id: Integer) - Can be used to delete blog
+#PUT     /api/v1/blog/:blog_id                   controllers.BlogController.modifyBlog(blog_id: Integer) - Can be used to modify blog
+
+GET     /api/v1/getallblogs                     controllers.BlogController.getAllBlogs()
+GET     /api/v1/getblogs/:begin/:end            controllers.BlogController.getBlogsInRange(begin: Integer, end: Integer)
+
+POST    /api/v1/comment                         controllers.CommentController.addNewComment()
+
+
+
+# An example controller showing a sample home page
+GET     /                           controllers.HomeController.index
+# An example controller showing how to use dependency injection
+GET     /count                      controllers.CountController.count
+# An example controller showing how to write asynchronous code
+GET     /message                    controllers.AsyncController.message
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
